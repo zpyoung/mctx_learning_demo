@@ -1,5 +1,6 @@
-from jax.experimental.optimizers import optimizer, make_schedule
 import jax.numpy as jnp
+from jax.example_libraries.optimizers import optimizer, make_schedule
+
 
 @optimizer
 def adamw(step_size, b1=0.9, b2=0.999, eps=1e-8, wd=1e-6):
